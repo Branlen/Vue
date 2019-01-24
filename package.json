@@ -5,7 +5,7 @@
   "author": "huang <473581543@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 10.8.200.223",
     "start": "npm run dev",
     "build": "node build/build.js"
   },

@@ -18,21 +18,21 @@
 
         <!-- //这是网页底部切换部分 -->
         <nav class="mui-bar mui-bar-tab">
-			<routerLink to="/homeContainer" id="defaultTab" class="mui-tab-item" href="tab-webview-subpage-about.html">
+			<routerLink to="/homeContainer" id="defaultTab" class="mui-tab-item-llb" href="tab-webview-subpage-about.html">
 				<span class="mui-icon mui-icon-home"></span>
 				<span class="mui-tab-label">首页</span>
 			</routerLink>
-			<routerLink to="/menberContainer" class="mui-tab-item" href="tab-webview-subpage-chat.html">
+			<routerLink to="/menberContainer" class="mui-tab-item-llb" href="tab-webview-subpage-chat.html">
                 <span class="mui-icon mui-icon-contact"></span>
 				
 				<span class="mui-tab-label">会员</span>
 			</routerLink>
-			<routerLink to="/shopcarContainer" class="mui-tab-item" href="tab-webview-subpage-contact.html">
+			<routerLink to="/shopcarContainer" class="mui-tab-item-llb" href="tab-webview-subpage-contact.html">
 				<span class="mui-icon mui-icon-extra mui-icon-extra-cart">
                 <span id="badge" class="mui-badge"> {{$store.getters.getCount}}</span></span>
 				<span class="mui-tab-label">购物车</span>
 			</routerLink>
-			<routerLink to="/searchContainer" class="mui-tab-item" href="tab-webview-subpage-setting.html">
+			<routerLink to="/searchContainer" class="mui-tab-item-llb" href="tab-webview-subpage-setting.html">
 				<span class="mui-icon mui-icon-search"></span>
 				<span class="mui-tab-label">搜索</span>
 			</routerLink>
@@ -92,6 +92,37 @@ export default {
 }
 .mui-bar{
 	z-index: 99;
+}
+/* // 该类名，解决 tabbar 点击无法切换的问题 */
+.mui-bar-tab .mui-tab-item-llb.mui-active {
+    color: #007aff;
+}
+
+.mui-bar-tab .mui-tab-item-llb {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+}
+
+.mui-bar-tab .mui-tab-item-llb .mui-icon {
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.mui-bar-tab .mui-tab-item-llb .mui-icon~.mui-tab-label {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 </style>
