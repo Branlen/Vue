@@ -81,7 +81,7 @@ export default {
 } 
 image[lazy=loading] {
   width: 40px;
-  height: 300px;
+  height: 301px;
   margin: auto;
 }
 .photo-list{
