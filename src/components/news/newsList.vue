@@ -38,8 +38,6 @@ export default {
                 
             },result=>{
                 Toast("获取新闻列表失败")
-            }).catch((err) => {
-                
             });
         }
     }

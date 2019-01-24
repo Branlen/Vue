@@ -58,7 +58,7 @@ Vue.use(MintUI);
 // Vue.use(Lazyload);
 
 //导入MUI样式
-import './lib/mui/css/mui.min.css'
+import './lib/mui/css/mui.css'
 import './lib/mui/css/icons-extra.css'
 
 

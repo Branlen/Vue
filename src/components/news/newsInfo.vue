@@ -37,8 +37,6 @@ export default {
                 }
             },result=>{
                 Toast("读取新闻数据失误")
-            }).catch((err) => {
-                
             });
         }
     },

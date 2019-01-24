@@ -54,8 +54,6 @@ export default {
                    console.log(result);
                    this.shopCarList =result.body.message;
                }
-            }).catch((err) => {
-               
             });
         },
         changeSelectd(id,val){

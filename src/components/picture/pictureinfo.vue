@@ -59,9 +59,8 @@ export default {
               }
           },()=>{
               Toast("读取信息失败")
-          }).catch((err) => {
-              
-          });
+          })
+          ;
       },
       getThumbs(){
           this.$http.get("api/getthumimages/"+this.id).then((result)=>{

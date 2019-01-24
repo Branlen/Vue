@@ -55,8 +55,6 @@ export default {
                     this.category.unshift(all);
                 }
                
-            }).catch((err) => {
-                
             });
         },
         getPhotoListByCateId(cateId){

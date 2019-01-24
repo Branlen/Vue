@@ -45,11 +45,9 @@ export default {
                 if(result.body.status==0){
                     this.comments=this.comments.concat(result.body.message);
                 }
-            },result =>{
-                
-            }).catch((err) => {
+            },(result) =>{
                 Toast("获取评论失败")
-            });
+            })
             },
         getMore(){
             this.pageindex++;
@@ -69,8 +67,6 @@ export default {
                     this.comments.unshift(cmt);
                     this.commentContent=" ";
                 }
-            }).catch((err) => {
-                
             });
         }      
     },

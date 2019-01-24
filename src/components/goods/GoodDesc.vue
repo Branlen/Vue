@@ -24,8 +24,6 @@ export default {
                 }
             },(result)=>{
                 Toast("读取失败")
-            }).catch((err) => {
-                
             });
         }
     }
